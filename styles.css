@@ -1,0 +1,233 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F0F0F0; /* Light Gray for a fresh feel */
+    color: #fffcfc; /* Dark Slate Gray for text, improving readability */
+    position: relative;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #79056a; /* Sea Green for a vibrant background */
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+header {
+    background-color: #FFFFFF; /* White for the navigation bar to keep it clean and simple */
+    color: #01060c; /* Dark Slate Gray for text to stand out on the light background */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #cd70d0; /* Sea Green for links to match the vibrant theme */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 80%;
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+    background-color: #F0F0F0; /* Light Gray for buttons to be subtle yet visible */
+    color: #79056a; /* Dark Slate Gray for button text */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+button.prev { left: 240px; }
+button.next { right: 240px; }
+
+footer {
+    background-color: #FFFFFF; /* Pink for footer to match the overall vibrant theme */
+    color: #79056a; /* White for text to ensure it stands out against the footer background */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main, header, footer {
+    position: relative;
+    z-index: 1;
+}
+.header-image {
+    display: block;
+    max-width: 150px; /* Adjust the size as necessary */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0 auto 10px; /* Centers the image and adds space below */
+    border-radius: 70%; /* Optional: makes the image round */
+}
+#timeline-container {
+    position: relative;
+    padding-left: 30px; /* Increase padding to accommodate the year */
+}
+
+.timeline-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.year-label {
+    width: 50px;
+    flex-shrink: 0;
+    margin-right: 35px; /* Space between the year and the text */
+    font-weight: bold; /* Optional: Make the year stand out */
+}
+
+.content {
+    flex-grow: 1; /* Allow the content to take up remaining space */
+}
+
+.timeline-block::before {
+    content: '';
+    position: absolute;
+    left: -30px; /* Position the bullets to the left of the content */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 10px;
+    width: 10px;
+    background-color: #f9f8f8;
+    border-radius: 50%;
+    border: 2px solid #79056a;
+}
+
+.timeline-block.visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease-out;
+}
+
+button.prev span, button.next span {
+    display: block; /* Makes the span take up the full width of the button */
+    font-size: 12px; /* Smaller font size for the text */
+    color: #555; /* Slightly different text color to differentiate from the arrow */
+}
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.category {
+    flex-basis: 20%; /* Adjust based on your layout preference */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.category h3 {
+    color: #333;
+    text-align: center;
+}
+
+.skill {
+    background: #79056a;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#contact a {
+    color: white; /* Sets the text color to white */
+    text-decoration: none; /* Optional: removes the underline from links */
+}
+
+#contact a:hover {
+    color: #ccc; /* Light grey color on hover for better user experience */
+    text-decoration: underline; /* Optional: adds an underline on hover */
+}
+
+#animated-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    min-height: 30px; /* Ensure the container doesn't collapse */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    visibility: visible; /* Ensure the text is visible by default */
+}
+#animated-heading:empty {
+    visibility: hidden;
+}
+#contact form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact button {
+    width: 100%;
+    padding: 10px;
+    background-color: #79056a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#contact button:hover {
+    background-color: #79056a;
+}
+
+
