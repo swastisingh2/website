@@ -1,6 +1,8 @@
 # Swasti Singh's Portfolio
 
-Welcome to the source code repository for my personal portfolio website! This website is designed to showcase my projects, skills, and experiences in web development, machine learning, and data science. Explore the sections to learn more about my journey and capabilities.
+[Visit Swasti's Portfolio](https://swastisingh.netlify.app/)
+
+Welcome to the source code repository for my personal portfolio website! This website is designed to showcase my projects, skills, and experiences in web development, machine learning, and data science. Explore the sections to learn more about my journey and capabilities. 
 
 ## Features
 
