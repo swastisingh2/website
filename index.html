@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swasti Singh's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <img src="natural headshot.jpeg" alt="Swasti Singh" class="header-image">
+        <h1 id="animated-heading"></h1>
+        <nav>
+            <ul>
+                
+                <li><a href="#about">About</a></li>
+                <li><a href="#timeline">Experience</a></li> <!-- Added Timeline link -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a rising junior at the University of Wisconsin-Madison, interested in Web Development, Machine Learning, and Data Science. I'm actively looking for an internship to gain practical experience (willing to relocate).</p>
+            
+            <p>I'm majoring in Computer Science and Data Science with a minor in Consulting. My passion for technology spans across both academic and professional landscapes, driving me to continuously engage with the latest industry developments and broaden my technical abilities.
+                 I enjoy playing badminton and absolutely love dancing!</p>
+                
+        </section>
+        
+        <!-- Timeline Section --> 
+
+        <section id="timeline">
+            <h2>My Experiences</h2>
+            <div id="timeline-container">
+                <div class="timeline-block" data-aos="fade-up" data-aos-delay="100">
+                    <span class="year-label">March 2024-Present</span>
+                    <div class="content">
+                        <h3>Computer Science Researcher at Wisconsin Institute for Discovery</h3>
+                        <p>Implemented various neural network architectures including multilayer perceptron and LSTMs using PyTorch to predict growth rate. The models error reduced by 98% while training. Automated the Buckingham pi theorem using NumPy and
+                            SymPy significantly boosting work efficiency and accuracy in calculations.</p>
+                        <p>Developed a mechanistic model using the SciPy python library to generate various datasets. Extracted valuable statistical
+                            insights from the data through Pandas, NumPy, and Matplotlib, enhancing comprehension and visualization.</p>
+                    </div>
+                </div>
+                <div class="timeline-block" data-aos="fade-up" data-aos-delay="200">
+                    <span class="year-label">August 2023-Present</span>
+                    <div class="content">
+                        <h3>Junior Developer at the University of Wisconsin Madison</h3>
+                        <p>Utilized Adobe Creative Cloud to create educational content for delivery to a Learning Management System (LMS) and
+                            PostgreSQL for data analysis.</p>
+                        <p>Recorded student data using MS Excel and conducted front-end testing and quality assurance checks for the LMS.</p>
+                    </div>
+                </div>
+                <div class="timeline-block" data-aos="fade-up" data-aos-delay="200">
+                    <span class="year-label">June 2023-July 2023</span>
+                    <div class="content">
+                        <h3>Data Science Researcher at Wisconsin Institute for Discovery</h3>
+                        <p>Designed a neural network architecture inspired by a research paper to automate dimensional analysis, 
+                            streamlining calculations based on the Buckingham Pi theorem for machine learning model development under Dr. John Yin.</p>
+                        <p>Achieved a 35% reduction in model error during training by implementing neural architectures like Multilayer Perceptrons and LSTMs, using PyTorch. 
+                            These models accurately predicted the urinary bladder's force dynamics under varying conditions</p>
+                        <p>Generated 5+ datasets using SciPy to simulate and model urinary tract dynamics, improving the accuracy and robustness of 
+                            mechanistic predictions</p>
+                    </div>
+                </div>
+                
+                <!-- Add more blocks for other experiences -->
+            </div>
+        </section>
+        <section id="projects" class="carousel">
+            <h2>My Projects</h2>
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <h3>Blog App: Sign in, Sign up and CRUD APIs using Ruby on Rails and MySQL</h3>
+                    <h1>Ruby, Ruby on Rails, MySQL</h1>
+                    <p>Designed and developed a robust web application using Ruby on Rails framework, MVC architecture.</p>
+                    <p>Implemented RESTful APIs using Rails conventions for the Article and Category resources. This allowed seamless
+                        integration with frontend components and enabled standard CRUD operations.</p>
+                    <p>ActiveRecord ORM facilitated database interactions, abstracting SQL queries and simplifying data management.</p>
+                    <p>Integrated Devise gem for user authentication, allowing secure Sign in and Sign-Up functionalities with JWT tokens
+                        for session management.</p>
+                    <p>Enhanced user engagement with features like image upload, search, comments, likes, and filters, ensuring a dynamic
+                        and interactive platform for content consumption.</p>
+                </div>
+                <div class="carousel-slide">
+                    <h3>Music and Flight Explorer Application</h3>
+                    <h1>Java, Data Structures, Algorithms, JUnit, VS Code, Git, Java FX</h1>
+                    <p>Developed a Java application that combines a song searching feature and a Flight Router functionality.</p>
+                    <p>For the song searching part, the application reads data from a CSV file, inserts them into a Red-Black Tree, and enables various functionalities through an interactive loop in the frontend. The application was tested using JUnit for
+                        robustness.</p>
+                    <p>Additionally, the application incorporates a Flight Router feature using Dijkstra's algorithm, allowing users to find the
+                        shortest sequence of flights between airports. The data is loaded from any Dot file specified by the user. JavaFX was
+                        utilized to create an interactive and visually appealing frontend for the application, enhancing user experience.</p>
+                </div>
+                <div class="carousel-slide">
+                    <h3>CNN (LeNet-5) for scene recognition</h3>
+                    <h1>PyTorch</h1>
+                    <p>Developed a Convolutional Neural Network (CNN) model architecture, specifically LeNet-5, using PyTorch for scene recognition tasks. Experimented with various hyperparameters such as batch size, learning rate, and number of epochs during the training process. 
+                        This exploration aimed to enhance the model's accuracy and convergence speed, demonstrating proficiency in hyperparameter tuning techniques.</p>
+                    <p>Utilized PyTorch's built-in profiler to conduct in-depth analysis of the model's runtime behavior and memory usage. This profiling helped identify and address bottlenecks, optimizing the model's efficiency for better performance.</p>
+                    
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">
+                ❮
+                <span>Previous</span> <!-- Label added under the arrow -->
+            </button>
+            <button class="next" onclick="moveSlide(1)">
+                ❯
+                <span>Next</span> <!-- Label added under the arrow -->
+            </button>
+            <!-- <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button> -->
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill">Python</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">Ruby</div>
+                    <div class="skill">R</div>
+                    <div class="skill">HTML & CSS</div>
+                    <div class="skill">Java</div>
+                </div>
+                <div class="category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill">Git</div>
+                    <div class="skill">MongoDB & PostgreSQL</div>
+                    <div class="skill">AWS</div>
+                    <div class="skill">React</div>
+                    <div class="skill">Node.js</div>
+                    <div class="skill">PyTorch</div>
+
+                </div>
+                <div class="category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">Team Leadership</div>
+                    <div class="skill">Problem Solving</div>
+                    <div class="skill">Communication</div>
+                    <div class="skill">Project Management</div>
+                    
+                </div>
+            </div>
+            
+            <section id="contact">
+                <h2>Let's get in touch!</h2>
+                <form id="contact-form" action="https://formspree.io/f/mknddoqy" method="POST">
+
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                
+
+            </section>
+
+            <section id="contact">
+                <p>Email: <a href="mailto:sssingh4@wisc.edu">sssingh4@wisc.edu</a> | Phone: +1 (346) 521-9034</p>
+                
+                
+
+            </section>
+            
+    </main>
+    <footer>
+        <p>Thank you!</p>
+    </footer>
+    <!-- Include ScrollMagic library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+<!-- Include ScrollMagic's debug add-on for development (optional) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+ <script>
+     AOS.init();
+ </script>
+   <!-- Particles.js -->
+<script src="particles.js"></script>
+   <!-- custom scripts -->
+<script src="scripts.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
+
+    <script>particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 80,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 140,
+                    "line_linked": {
+                    "opacity": 1
+                }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });</script>
+ 
+     
+</body>
+</html>
